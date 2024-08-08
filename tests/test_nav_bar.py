@@ -1,5 +1,5 @@
-from framework.MainPage import MainPageHelper
-from framework.NavBar import NavBarHelper
+from framework.pageObject.MainPage import MainPageHelper
+from framework.pageObject.NavBar import NavBarHelper
 
 
 class TestNavBar:

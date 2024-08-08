@@ -1,10 +1,12 @@
-from framework.MainPage import MainPageHelper
+from framework.pageObject.MainPage import MainPageHelper
 
 
 class TestConstructor:
     def test_tab_switcher_bread(self, browser):
         main_page = MainPageHelper(browser)
         main_page.go_to_site()
+        main_page.set_tab("sauce")
+        main_page.set_tab("bread")
         tab_header = main_page.get_tab_header_text("bread")
         assert tab_header == "Булки"
 
